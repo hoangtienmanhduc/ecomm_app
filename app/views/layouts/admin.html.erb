@@ -50,7 +50,7 @@
             <% end %>
           </li>
           <li>
-            <%= link_to admin_path, class: "block px-4 py-2 hover:rounded hover:bg-gray-700" do %>
+            <%= link_to admin_categories_path, class: "block px-4 py-2 hover:rounded hover:bg-gray-700" do %>
               <i class="fa-solid fa-list"></i>
               <span class="hidden md:inline-block">Categories</span>
             <% end %>
@@ -64,7 +64,9 @@
         </ul>
       </nav>
     </div>
-    <%= yield %>
+    <div class="w-full p-8">
+      <%= yield %>
+    </div>
     </main>
   </body>
 </html>

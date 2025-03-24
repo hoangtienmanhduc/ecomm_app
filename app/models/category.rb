@@ -1,2 +1,3 @@
-class Admin::Category < ApplicationRecord
+class Category < ApplicationRecord
+    has_one_attached :image 
 end
